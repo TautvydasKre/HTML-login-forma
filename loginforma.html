@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginReg</title>
+</head>
+<body>
+    <header>
+        <h1>Prekiu uzsakymo forma</h1>
+    </header>
+    <form>
+        <div>
+            <label for="vardas">Vardas</label>
+            <input type="text" name="vardas" id="vardas" required>
+        </div>
+        <div>
+            <label>Pavarde</label>
+            <input type="text" name="pavarde" id="pavarde" required>
+        </div>
+        <div>
+            <label>Slaptazodis</label>
+            <input type="password" name="password" required>
+        </div>
+        <div>
+            <label>El.pastas</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="miestas">Miestas</label>
+            <select name="miestas" if="miestas">
+                <option label="Jonava" value="Jonava">Jonava</option>
+                <option label="Kaunas" value="Kaunas">Kaunas</option> 
+                <option label="Panevezys" value="Panevezys">Panevezys</option> 
+                <option label="Kedainiai" value="Kedainiai">Kedainiai</option> 
+                <option label="Ukmerge" value="Ukmerge">Ukmerge</option> 
+                <option label="Vilnius" value="Vilnius">Vilnius</option>
+                <option label="Siauliai" value="Siauliai">Siauliai</option> 
+                <option label="Jurbarkas" value="Jurbarkas">Jurbarkas</option> 
+                <option label="Klaipeda" value="Klaipeda">Klaipeda</option> 
+                <option label="Utena" value="Utena">Utena</option> 
+                <option label="Vilkaviskis" value="Vilkaviskis">Vilkaviskis</option> 
+                <option label="Marijampole" value="Marijampole">Marijampole</option> 
+                <option label="Ignalina" value="Ignalina">Ignalina</option> 
+            </select>
+             <label>Gatve</label>  
+             <input type="adress" name=" adress" id="adress" required>
+             <label>Buto NR.</label>  
+             <input type="Buto NR." name=" Buto NR." id="Buto NR." required>
+        </div>
+        <div>
+        <strong>Apmokejimo budas</strong>
+        <div>
+            <input type="radio" name="apmokejimas" id="kortele">
+            <label for="kortele">kortele</label>
+            <input type="radio" name="apmokejimas" id="grynais">
+            <label for="grynais">grynais</label>
+            <input type="radio" name="apmokejimas" id="pavedimas">
+            <label for="pavedimas">pavedimas</label>
+        </div>
+        <div>
+            <input type="checkbox" name="dovana1" id="Skanestai">
+            <label for="dovana" id="dovana">skanestai</label>
+            <input type="checkbox" name="dovana2" id="tapkes">
+            <label for="dovana" id="dovana">tapkes</label>
+            <input type="checkbox" name="dovana3" id="zaislas">
+            <label for="dovana" id="dovana">zaislas</label>
+            <input type="checkbox" name="dovana4" id="rubai">
+            <label for="dovana" id="dovana">rubai</label>
+        </div>
+        <label for="Pastabos">Pastabos</label>
+        <textarea id="Pastabos" name="Pastabos"></textarea>
+        <div>
+            <button type="Uzsakyti">Uzsakyti</button>
+        </div>
+    </form>
+</body>
+</html>

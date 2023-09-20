@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginReg</title>
+</head>
+<body>
+    <header>
+        <h1>Prekiu uzsakymo forma</h1>
+    </header>
+    <form>
+        <div>
+            <label for="userID">User id</label>
+            <input type="text" name="userID" id="userID" required>
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" name="password" required>
+        </div>
+        <div>
+            <label>Name</label>
+            <input type="name" name="name" required>
+        </div>
+        <div>
+            <label for="country">Country</label>
+            <select name="country" if="country">
+                <option label="lietuva" value="lietuva">Lietuva</option>
+                <option label="lenkija" value="lenkija">Lenkija</option> 
+                <option label="latvija" value="latvija">Latvija</option> 
+                <option label="luxenburgas" value="luxenburgas">Luxenburgas</option> 
+                <option label="vokietija" value="vokietija">Vokietija</option> 
+                <option label="prancuzija" value="prancuzija">Prancuzija</option>
+                <option label="juodkalnija" value="juodkalnija">Juodkalnija</option> 
+                <option label="estija" value="estija">Estija</option> 
+                <option label="indija" value="indija">Indija</option> 
+                <option label="turkija" value="turkija">Turkija</option> 
+                <option label="egiptas" value="egiptas">Egiptas</option> 
+                <option label="belgija" value="Belgija">Belgija</option> 
+                <option label="italija" value="Italija">Italija</option> 
+            </select>
+             <label>Street</label>  
+             <input type="street" name=" street" id="street" required>
+             <label>Appartment number</label>  
+             <input type="appartment number" name=" appartment number" id="appartment number" required>
+        </div>
+        <div>
+            <label>ZIP code</label>
+            <input type="text" name="zipcode" id="zipcode" required pattern="{.1,}*[0-9]+">
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="male">Sex</label>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">female</label>
+        </div>
+        <div>
+            <label for="language" id="dovana">Language:</label>
+            <input type="checkbox" name="kalba" id="kalba">
+            <label for="kalba" id="kalba">English</label>
+            <input type="checkbox" name="kalba" id="kalba">
+            <label for="kalba" id="kalba">Non English</label>
+        </div>
+        <label for="pastabos">About</label>
+        <textarea id="pastabos" name="pastabos"></textarea>
+        <div>
+            <button type="uzsakyti">Pateikti</button>
+        </div>
+    </form>
+</body>
+</html>
