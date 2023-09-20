@@ -12,53 +12,53 @@
     </header>
     <form>
         <div>
-            <label for="userID">User id</label>
-            <input type="text" name="userID" id="userID" required>
+            <label for="userID">User id:</label>
+            <input type="text" name="userID" id="userID" required title="Prasome uzpildyti laukeli">
         </div>
         <div>
-            <label>Password</label>
-            <input type="password" name="password" required>
+            <label>Password:</label>
+            <input type="password" id="Name" name="password" required pattern=".{7,12}" required title="7 to 12 characters">
         </div>
         <div>
-            <label>Name</label>
-            <input type="name" name="name" required>
+            <label>Name:</label>
+            <input type="text" name="name" required pattern="[A-Za-z]+" required title="letters only least 1">
         </div>
         <div>
             <label for="country">Country</label>
-            <select name="country" if="country">
-                <option label="lietuva" value="lietuva">Lietuva</option>
-                <option label="lenkija" value="lenkija">Lenkija</option> 
-                <option label="latvija" value="latvija">Latvija</option> 
-                <option label="luxenburgas" value="luxenburgas">Luxenburgas</option> 
-                <option label="vokietija" value="vokietija">Vokietija</option> 
-                <option label="prancuzija" value="prancuzija">Prancuzija</option>
-                <option label="juodkalnija" value="juodkalnija">Juodkalnija</option> 
-                <option label="estija" value="estija">Estija</option> 
-                <option label="indija" value="indija">Indija</option> 
-                <option label="turkija" value="turkija">Turkija</option> 
-                <option label="egiptas" value="egiptas">Egiptas</option> 
-                <option label="belgija" value="Belgija">Belgija</option> 
-                <option label="italija" value="Italija">Italija</option> 
+            <select name="country" if="country" required>
+                <option label="Lietuva" value="lietuva">lietuva</option>
+                <option label="Lenkija" value="lenkija">Lenkija</option> 
+                <option label="Latvija" value="latvija">Latvija</option> 
+                <option label="Luxenburgas" value="luxenburgas">Luxenburgas</option> 
+                <option label="Vokietija" value="vokietija">Vokietija</option> 
+                <option label="Prancuzija" value="prancuzija">Prancuzija</option>
+                <option label="Juodkalnija" value="juodkalnija">Juodkalnija</option> 
+                <option label="Estija" value="estija">Estija</option> 
+                <option label="Indija" value="indija">Indija</option> 
+                <option label="Turkija" value="turkija">Turkija</option> 
+                <option label="Egiptas" value="egiptas">Egiptas</option> 
+                <option label="Belgija" value="Belgija">Belgija</option> 
+                <option label="Italija" value="italija">italija</option> 
             </select>
-             <label>Street</label>  
-             <input type="street" name=" street" id="street" required>
-             <label>Appartment number</label>  
-             <input type="appartment number" name=" appartment number" id="appartment number" required>
+             <label>Adress:</label>  
+             <input type="adress" name=" adress" id="adress" required>
         </div>
         <div>
-            <label>ZIP code</label>
-            <input type="text" name="zipcode" id="zipcode" required pattern="{.1,}*[0-9]+">
+            <label>ZIP code:</label>
+            <input type="text" name="zipcode" id="zipcode" required pattern="[0-9]+" required title="Numbers only">
         </div>
         <div>
-            <label>Email</label>
+            <label>Email:</label>
             <input type="email" name="email" id="email" required>
         </div>
         <div>
-            <label for="male">Sex</label>
+            <label for="male">Sex:</label>
             <input type="radio" name="gender" id="male">
             <label for="male">Male</label>
             <input type="radio" name="gender" id="female">
-            <label for="female">female</label>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="female">Other</label>
         </div>
         <div>
             <label for="language" id="dovana">Language:</label>
@@ -67,7 +67,7 @@
             <input type="checkbox" name="kalba" id="kalba">
             <label for="kalba" id="kalba">Non English</label>
         </div>
-        <label for="pastabos">About</label>
+        <label for="pastabos">About:</label>
         <textarea id="pastabos" name="pastabos" rows="5" cols="50"></textarea>
         <div>
             <button type="uzsakyti">Pateikti</button>

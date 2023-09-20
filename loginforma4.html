@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pristatymo adresai</title>
+</head>
+<body>
+    <form>
+    <Header>
+        <h1>
+            Pristatymo adresai
+        </h1>
+    
+        <div>
+            <button class="link">PIRKEJAS</button>
+            <button class="link">GAVEJAS</button>
+        </div>
+    </Header>
+    <div>
+        <label>Vardas</label>
+        <input type="name" name="name" id="name" required pattern="[A-Za-z]+" required title="iveskite varda naudodami tik raides" placeholder="Vardas">
+        <label>Pavarde</label>
+        <input type="lastName" name="lastName" id="lastName" required pattern="[A-Za-z]+" required title="iveskite pavarde naudodami tik raides" placeholder="Pavarde">
+    </div>
+    <div>
+        <label>Telefonas</label>
+        <input type="tel" name="telefonas" id="telefonas" required pattern="[0-9]{3}-[0-9]{1}-[0-9]{4}-[0-9]{3}" required title="iveskite telefono numeri tokia tvarka 3 skaiciai atskiriama bruksniu 1 skaicius atskiriama bruksniu 4 skaiciai atskiriama bruksniu 3 skaiciai" placeholder="370-6-1772-484">
+        <label>Imones pavadinimas</label>
+        <input type="pavadinimas" name="pavadinimas" id="pavadinimas" placeholder="UAB" required title="Iveskite imones pavadinima naudodami tik raides">
+    </div>
+    <div>
+        <label>Miestas</label>
+        <select name="city" if="city">
+            <option label="Jonava" value="jonava">jonava</option>
+            <option label="Kaunas" value="kaunas">kaunas</option>
+            <option label="Rukla" value="rukla">rukla</option>
+            <option label="Klaipeda" value="klaipeda">klaipeda</option>
+        </select>
+        <label>Adresas</label>
+        <input type="adresas" name="adresas" id="adresas" required title="iveskite tikslu gyvenamosios vietos adresa" placeholder="Prezidento g. 18-26">
+    </div>
+    <div>
+        <label>Pasto kodas [tik skaiciai]</label>
+    </div>
+    <div>
+        <input type="number" name="kodas" id="kodas" placeholder="55185" required title="iveskite pasto koda naudodamiesi tik skaitmenimis">
+    </div>
+    <div>
+        <button type="cancel">Atsaukti</button>
+        <button type="confirm">Pateikti</button>
+    </div>
+</form>
+</body>
+</html>
